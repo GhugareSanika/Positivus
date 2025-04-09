@@ -16,16 +16,16 @@ export default function Navbar() {
           <img
             src="/ss1.png" // Make sure this exists in your public folder
             alt="Positivus Icon"
-            className="ml-2 h-10 w-10 object-contain" // Same size as diamond
+            className="ml-2 h-8 w-8 md:h-10 md:w-10 object-contain" // Smaller on mobile
           />
 
           {/* Text */}
-          <span className="ml-2 text-2xl font-bold">Positivus</span>
+          <span className="ml-2 text-xl md:text-2xl font-bold">Positivus</span>
         </Link>
       </div>
 
       {/* Desktop Navigation */}
-      <div className="hidden md:flex items-center space-x-16">
+      <div className="hidden md:flex items-center space-x-8 lg:space-x-16 font-sans">
         <Link
           href="/about"
           className="hover:underline underline-offset-4 decoration-lime-400 decoration-2"

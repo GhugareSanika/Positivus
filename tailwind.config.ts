@@ -1,4 +1,4 @@
-import type { Config } from "tailwindcss"
+import type { Config } from "tailwindcss";
 
 const config = {
   darkMode: ["class"],
@@ -19,8 +19,16 @@ const config = {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ['"Space Grotesk"', "sans-serif"], // Note the quotes for font names with spaces
+        space: ["Space Grotesk"],
+      },
       colors: {
         border: "hsl(var(--border))",
+        limeCustom: "#B9FF66",
+        lightGray: "#F3F3F3",
+        darkNavy: "#191A23",
+
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
@@ -76,6 +84,6 @@ const config = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-} satisfies Config
+} satisfies Config;
 
-export default config
+export default config;

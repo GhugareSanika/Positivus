@@ -3,6 +3,32 @@
 @tailwind utilities;
 
 @layer base {
+  @font-face {
+    font-family: "Space Grotesk";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("/fonts/SpaceGrotesk/SpaceGrotesk-Regular.ttf") format("truetype");
+  }
+
+  /* Space Grotesk Medium */
+  @font-face {
+    font-family: "Space Grotesk";
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url("/fonts/SpaceGrotesk/SpaceGrotesk-Medium.ttf") format("truetype");
+  }
+
+  /* Space Grotesk Bold */
+  @font-face {
+    font-family: "Space Grotesk";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url("/fonts/SpaceGrotesk/SpaceGrotesk-Bold.ttf") format("truetype");
+  }
+
   :root {
     --background: 0 0% 100%;
     --foreground: 0 0% 3.9%;
